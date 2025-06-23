@@ -6,11 +6,9 @@ const description = document.getElementById('gameDescription');
 
 menuItems.forEach(item => {
     item.addEventListener('click', () => {
-        // Atualiza estilo ativo
         document.querySelector('.carousel-menu li.active')?.classList.remove('active');
         item.classList.add('active');
 
-        // Atualiza conteúdo
         const img = item.getAttribute('data-image');
         const txt = item.getAttribute('data-title');
         const desc = item.getAttribute('data-description');
@@ -46,10 +44,9 @@ scrollRight.addEventListener('click', () => {
 });
 
 
-// Fade-out ao clicar em links internos
+// Fade-out
 document.querySelectorAll('a').forEach(link => {
     const href = link.getAttribute('href');
-    // Só aplicar se for link interno
     if (href && !href.startsWith('http') && !href.startsWith('#') && !link.hasAttribute('target')) {
         link.addEventListener('click', function (e) {
             e.preventDefault();
