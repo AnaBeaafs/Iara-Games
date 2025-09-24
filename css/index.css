@@ -1,0 +1,295 @@
+/* Reset & Font Config */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tektur", sans-serif;
+    --transition: 0.4s;
+}
+/* Base */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    /* espaço para navbar + subnav */
+}
+/* Efeito de fade entre páginas */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+h1,
+h2 {
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+h3,
+a {
+    font-family: "Inter", sans-serif;
+}
+
+/* Font Classes */
+.bytesized-regular {
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tektur-uniquifier {
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* Variáveis */
+:root {
+    --primary-color: #442D7C;
+    --second-color: #6341B4;
+    --tertiary-color: #F85ACA;
+    --fourth-color: #DAFA8B;
+    --neutra-color: #fff;
+    --neutral-color: #a8a8a8;
+    --second-neutral-color: #000;
+    --transition: 0.4s;
+}
+
+/* Cores*/
+.text-branca {
+    color: var(--neutra-color) !important;
+}
+
+.text-rosa {
+    color: var(--tertiary-color) !important;
+}
+.bnt-rosa {
+    background-color: var(--tertiary-color) !important;
+}
+.bnt-roxo {
+    background-color: var(--primary-color) !important;
+}
+.bnt-cinza {
+    color: var(--neutral-color) !important;
+}
+
+.container-roxo {
+    color: var(--second-color);
+}
+
+
+/* Navbar principal - branco fixo no topo */
+#navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    font-family: "Inter", sans-serif;
+}
+
+#navbar li {
+    padding: 5px;
+}
+
+/* Logo ao lado esquerdo */
+.logo {
+    margin-right: 1vw;
+}
+
+/* Formulário */
+.forms {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 10vw;
+}
+
+.forms h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #333;
+}
+small {
+    margin-bottom: 3rem;
+    font-weight: 200;
+    font-size: 20px;
+}
+input,
+textarea {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+input[required],
+textarea[required] {
+    border-left: 4px solid var(--tertiary-color);
+}
+
+/* Botões do formulário */
+button-forms {
+    padding: 1rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--neutra-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+
+button-forms:hover,
+button-forms:focus {
+    background: var(--second-color);
+}
+
+.modal-title {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Carousel */
+#epic-carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#epic-carousel .carousel-inner,
+#epic-carousel .carousel-item {
+    height: 100%;
+}
+
+#epic-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 0.5 = 50% de opacidade */
+}
+
+#epic-carousel .carousel-caption {
+    position: center;
+    bottom: 20%;
+    left: 10%;
+    transform: translateY(10%);
+    color: white;
+    text-align: center;
+}
+
+#epic-carousel .carousel-caption h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#epic-carousel .carousel-caption p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+#epic-carousel .carousel-caption .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+}
+
+
+/* PÁGINA SOBRE */
+.about-section h2 {
+    color: var(--primary-color);
+    font-size: 5vh;
+    /* ou outra cor do seu tema */
+}
+
+.about-section p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* Preloader ocupa a tela toda */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    /* cor de fundo da tela de carregamento */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+/* Spinner animado */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+}
+
+/* Animação de rotação */
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Classe que esconde o preloader */
+#preloader.hide {
+    opacity: 0;
+    pointer-events: none;
+}
