@@ -1,0 +1,92 @@
+/* src/components/Navbar.module.css */
+
+/* Reset & Font Config */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tektur", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: #000;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #000;
+  padding-top: 100px; /* 60px navbar + 40px subnav */
+}
+
+h1, h2 {
+  font-family: "Tektur", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+
+p, h3, a {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+/* Variáveis */
+:root {
+  --primary-color: #442D7C;
+  --second-color: #6341B4;
+  --tertiary-color: #F85ACA;
+  --fourth-color: #DAFA8B;
+  --neutra-color: #fff;
+  --neutral-color: #a8a8a8;
+  --second-neutral-color: #000;
+  --transition: 0.4s;
+}
+
+.container {
+  padding: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 6rem;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.filter {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  min-width: 220px;
+  cursor: pointer;
+}
+
+.loading, .noGames {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem;
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}

@@ -1,0 +1,87 @@
+/* src/components/Navbar.module.css */
+
+/* Reset & Font Config */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tektur", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: #000;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #000;
+  padding-top: 100px; /* 60px navbar + 40px subnav */
+}
+
+h1, h2 {
+  font-family: "Tektur", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+
+p, h3, a {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+/* Variáveis */
+:root {
+  --primary-color: #442D7C;
+  --second-color: #6341B4;
+  --tertiary-color: #F85ACA;
+  --fourth-color: #DAFA8B;
+  --neutra-color: #fff;
+  --neutral-color: #a8a8a8;
+  --second-neutral-color: #000;
+  --transition: 0.4s;
+}
+
+.container {
+  padding: 10rem;
+  max-width: 800px;
+  margin: 5rem auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  
+}
+
+.image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+p{
+  color: black;
+}
+.link {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.link:hover {
+  background: #0f0216;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
